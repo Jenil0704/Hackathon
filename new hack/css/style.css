@@ -1,0 +1,615 @@
+ @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ :root {
+   --main-bg-color: #bd6418;
+   --font1: "Baloo Bhaina 2", cursive;
+   --font2: "Roboto", sans-serif;
+ }
+
+ .font1 {
+   font-family: var(--font1);
+ }
+
+ .font2 {
+   font-family: var(--font2);
+ }
+
+ .max-width-1 {
+   max-width: 80vw;
+ }
+
+ .max-width-2 {
+   max-width: 60vw;
+ }
+
+ .m-auto {
+   margin: auto;
+ }
+
+ .mx-1 {
+   margin-left: 23px;
+   margin-right: 23px;
+ }
+
+ .my-2 {
+   margin-top: 32px;
+   margin-bottom: 32px;
+ }
+
+ .btn {
+   padding: 0px 20px;
+   padding-top: 3px;
+   border: 2px solid black;
+   border-radius: 6px;
+   font-family: var(--font1);
+   font-size: 16px;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .btn:hover {
+   color: white;
+   background: var(--main-bg-color);
+ }
+
+ .form-input {
+   padding: 0px 5px;
+   padding-top: 3px;
+   font-size: 16px;
+   border: 2px solid black;
+   border-radius: 4px;
+   margin: 0 13px;
+   font-family: var(--font1);
+ }
+
+ .form-box input,
+ textarea {
+   width: 52vw;
+   padding: 0px 6px;
+   margin: 7px 0;
+   font-size: 18px;
+   font-family: var(--font1);
+   border: 2px solid var(--main-bg-color);
+   border-radius: 5px;
+ }
+
+ /* ========================================= */
+
+ .row {
+   display: flex;
+ }
+
+ .post-img {
+   height: 404px;
+   overflow: hidden;
+ }
+
+ .post-img img {
+   width: 100%;
+ }
+
+
+ .blog-post-content h1 {
+   text-align: center;
+ }
+
+ .blog-post-content p {
+   font-size: 18px;
+ }
+
+ .more-post {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .blogpost-meta {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .author-info {
+   margin: 12px 0;
+ }
+
+ .author-info div {
+   padding: 4px 0px;
+   font-family: var(--font2);
+ }
+
+ .social {
+   padding-right: 53px;
+   align-self: center;
+   cursor: pointer;
+ }
+
+ /* ========================================= */
+
+ .navigation {
+   margin-top: 25px;
+   font-family: var(--font1);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .nav-left {
+   display: flex;
+ }
+
+ .nav-left span {
+   font-size: 35px;
+   padding-top: 10px;
+ }
+
+ .nav-left ul {
+   display: flex;
+   align-items: center;
+   margin: 0 77px;
+   font-size: 22px;
+   padding-bottom: 23px;
+ }
+
+ .nav-left ul li {
+   list-style: none;
+   margin: 0 14px;
+   font-family: var(--font2);
+   transition: all 0.3s ease-in-out;
+ }
+
+ .nav-left ul li a {
+   text-decoration: none;
+   color: black;
+ }
+
+ .nav-left ul li a:hover {
+   color: var(--main-bg-color);
+   font-weight: bolder;
+ }
+
+ .content {
+   height: 100%;
+   display: flex;
+   margin-top: 32px;
+   padding: 9px;
+   position: relative;
+ }
+
+ .content::after {
+   content: "";
+   background-image: url("../img/11.svg");
+   position: absolute;
+   width: 100%;
+   height: inherit;
+   opacity: 0.15;
+   border-radius: 12px;
+ }
+
+ .content-left {
+   font-family: var(--font1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 49px;
+   z-index: 1;
+ }
+
+ .content-right {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .content-right img {
+   height: 355px;
+   border: 2px solid black;
+   border-radius: 200px;
+ }
+
+ .home-articles {
+   padding: 18px;
+   background-color: rgba(248, 239, 239, 0.5);
+   margin-top: 23px;
+   position: relative;
+ }
+
+ .year-box {
+   position: absolute;
+   right: 0px;
+   top: 100px;
+   width: 234px;
+   height: 255px;
+   font-size: 18px;
+ }
+
+ .year-box div {
+   margin: 12px 0px;
+ }
+
+ .home-article {
+   display: flex;
+   margin: 25px;
+ }
+
+ .home-article img {
+   width: 300px;
+ }
+
+ .home-article-content {
+   align-self: center;
+   padding: 25px;
+ }
+
+ .home-article-content a {
+   text-decoration: none;
+   color: black;
+ }
+
+ .footer {
+   height: 50px;
+   background-color: var(--main-bg-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   flex-direction: column;
+ }
+
+ .footer a {
+   color: white;
+ }
+
+ /* styles.css */
+
+ /* Global styles */
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ /* Root color variables */
+ :root {
+   --nutmeg: hsl(14, 45%, 16%);
+   --dark-raspberry: hsl(330, 51%, 22%);
+   --rose-white: hsl(330, 100%, 98%);
+   --eggshell: hsl(30, 54%, 98%);
+   --light-grey: hsl(30, 18%, 87%);
+   --wenge-brown: hsl(30, 10%, 34%);
+   --dark-charcoal: hsl(124, 6%, 18%);
+ }
+
+ /* Container styles */
+ .container {
+   max-width: 800px;
+   margin: auto;
+   padding: 20px;
+   background-color: var(--rose-white);
+ }
+
+ /* Recipe image styles */
+ .recipe-ing img {
+   width: 100%;
+   height: 300px;
+   /* Set a medium height */
+   object-fit: cover;
+   /* Ensures the image covers the area without distortion */
+   border-radius: 8px;
+   margin-bottom: 20px;
+ }
+
+ /* Recipe information styles */
+ .recipe-information {
+   margin-top: 20px;
+ }
+
+ /* Title and description styles */
+ .recipe-information h1 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   color: var(--nutmeg);
+   margin-bottom: 10px;
+ }
+
+ .description {
+   font-family: 'Roboto', sans-serif;
+   color: var(--dark-raspberry);
+   font-size: 16px;
+ }
+
+ /* Preparation time styles */
+ .recipe-prep-time h3 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   color: var(--dark-raspberry);
+ }
+
+ /* Ingredients and instructions styles */
+ .ingredients,
+ .instructions {
+   margin-top: 15px;
+   list-style-type: none;
+ }
+
+ .item {
+   margin: 10px 0;
+ }
+
+ /* Nutrition styles */
+ .nutrition-step {
+   margin-top: 30px;
+   border-top: 1px solid var(--light-grey);
+   padding-top: 20px;
+ }
+
+ .nutrition-table {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+ }
+
+ .nutrition-table .item {
+   background-color: var(--light-grey);
+   padding: 10px;
+   border-radius: 5px;
+ }
+
+ /* General button and input styles (if needed) */
+ .btn {
+   padding: 10px 20px;
+   border: 2px solid var(--nutmeg);
+   border-radius: 5px;
+   background-color: var(--rose-white);
+   color: var(--dark-raspberry);
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .btn:hover {
+   background-color: var(--nutmeg);
+   color: white;
+ }
+
+ /* styles.css */
+
+ /* Global styles */
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ /* Root color variables */
+ :root {
+   --nutmeg: hsl(14, 45%, 16%);
+   --dark-raspberry: hsl(330, 51%, 22%);
+   --rose-white: hsl(330, 100%, 98%);
+   --eggshell: hsl(30, 54%, 98%);
+   --light-grey: hsl(30, 18%, 87%);
+   --wenge-brown: hsl(30, 10%, 34%);
+   --dark-charcoal: hsl(124, 6%, 18%);
+ }
+
+ /* Container styles */
+ .container {
+   max-width: 800px;
+   margin: auto;
+   padding: 20px;
+   background-color: var(--rose-white);
+ }
+
+ /* Recipe image styles */
+ .recipe-ing img {
+   width: 100%;
+   border-radius: 8px;
+ }
+
+ /* Recipe information styles */
+ .recipe-information {
+   margin-top: 20px;
+ }
+
+ /* Title and description styles */
+ .recipe-information h1 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   color: var(--nutmeg);
+   margin-bottom: 10px;
+ }
+
+ .description {
+   font-family: 'Roboto', sans-serif;
+   color: var(--dark-raspberry);
+   font-size: 16px;
+ }
+
+ /* Preparation time styles */
+ .recipe-prep-time h3 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   color: var(--dark-raspberry);
+ }
+
+ /* Ingredients and instructions styles */
+ .ingredients,
+ .instructions {
+   margin-top: 15px;
+   list-style-type: none;
+ }
+
+ .item {
+   margin: 10px 0;
+ }
+
+ /* Nutrition styles */
+ .nutrition-step {
+   margin-top: 30px;
+   border-top: 1px solid var(--light-grey);
+   padding-top: 20px;
+ }
+
+ .nutrition-table {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+ }
+
+ .nutrition-table .item {
+   background-color: var(--light-grey);
+   padding: 10px;
+   border-radius: 5px;
+ }
+
+ /* General button and input styles (if needed) */
+ .btn {
+   padding: 10px 20px;
+   border: 2px solid var(--nutmeg);
+   border-radius: 5px;
+   background-color: var(--rose-white);
+   color: var(--dark-raspberry);
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .btn:hover {
+   background-color: var(--nutmeg);
+   color: white;
+ }
+
+ .nun {
+   color: red;
+
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ /* Root color variables */
+ :root {
+   --nutmeg: hsl(14, 45%, 16%);
+   --dark-raspberry: hsl(330, 51%, 22%);
+   --rose-white: hsl(330, 100%, 98%);
+   --eggshell: hsl(30, 54%, 98%);
+   --light-grey: hsl(30, 18%, 87%);
+   --wenge-brown: hsl(30, 10%, 34%);
+   --dark-charcoal: hsl(124, 6%, 18%);
+ }
+
+ /* Container styling */
+ .container {
+   max-width: 800px;
+   margin: 30px auto;
+   padding: 20px;
+   background-color: var(--rose-white);
+   border-radius: 8px;
+ }
+
+ /* Recipe image styling */
+ .recipe-ing img {
+   width: 100%;
+   border-radius: 8px;
+   object-fit: cover;
+   margin-bottom: 20px;
+ }
+
+ /* Recipe information styling */
+ .recipe-information h1 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   font-size: 32px;
+   color: var(--nutmeg);
+   margin-bottom: 10px;
+ }
+
+ .description {
+   font-family: 'Roboto', sans-serif;
+   color: var(--dark-raspberry);
+   font-size: 16px;
+   line-height: 1.6;
+   margin-bottom: 20px;
+ }
+
+ /* Preparation time styling */
+ .recipe-prep-time h3 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   font-size: 22px;
+   color: var(--dark-raspberry);
+   margin-bottom: 10px;
+ }
+
+ .recipe-prep-time ul {
+   font-family: 'Roboto', sans-serif;
+   list-style: none;
+   margin-bottom: 20px;
+ }
+
+ .recipe-prep-time ul li span {
+   font-weight: bold;
+ }
+
+ /* Ingredients and instructions styling */
+ .recipe-step {
+   margin-bottom: 20px;
+ }
+
+ .recipe-step h2 {
+   font-family: 'Baloo Bhaina 2', cursive;
+   font-size: 24px;
+   color: var(--nutmeg);
+   margin-bottom: 10px;
+ }
+
+ .ingredients,
+ .instructions {
+   list-style-type: none;
+   margin-left: 20px;
+ }
+
+ .item {
+   margin: 10px 0;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+ }
+
+ /* Nutrition table styling */
+ .nutrition-step {
+   margin-top: 30px;
+   padding-top: 20px;
+   border-top: 1px solid var(--light-grey);
+ }
+
+ .nutrition-table {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+ }
+
+ .nutrition-table .item {
+   background-color: var(--light-grey);
+   padding: 10px;
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .nutrition-table .amount {
+   font-weight: bold;
+ }
+
+ /* Button styling */
+ .btn {
+   padding: 10px 20px;
+   border: 2px solid var(--nutmeg);
+   border-radius: 5px;
+   background-color: var(--rose-white);
+   color: var(--dark-raspberry);
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+
+ .btn:hover {
+   background-color: var(--nutmeg);
+   color: white;
+ }

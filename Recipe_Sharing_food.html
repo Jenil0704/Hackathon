@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share a Recipe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/Recipe_Sharing_food.css">
+</head>
+
+<body>
+    <header>
+        <h1>Share Your Favorite Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="#share-recipe">Share a Recipe</a></li>
+                <li><a href="#recipe-list">Recipe List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="share-recipe">
+            <h2>Share a Recipe</h2>
+            <form id="recipeForm">
+                <label for="recipeTitle">Recipe Title:</label>
+                <input type="text" id="recipeTitle" required>
+
+                <label for="recipeDescription">Description:</label>
+                <textarea id="recipeDescription" required></textarea>
+
+                <label for="recipeIngredients">Ingredients (comma-separated):</label>
+                <input type="text" id="recipeIngredients" required>
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </section>
+
+        <section id="recipe-list">
+            <h2>Recipe List</h2>
+            <div id="recipesContainer"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('recipeForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the values from the form
+            const title = document.getElementById('recipeTitle').value;
+            const description = document.getElementById('recipeDescription').value;
+            const ingredients = document.getElementById('recipeIngredients').value.split(',');
+
+            // Create a new recipe object
+            const recipe = {
+                title: title,
+                description: description,
+                ingredients: ingredients.map(ingredient => ingredient.trim()) // Trim whitespace
+            };
+
+            // Display the recipe
+            displayRecipe(recipe);
+
+            // Clear the form
+            document.getElementById('recipeForm').reset();
+        });
+
+        function displayRecipe(recipe) {
+            const recipesContainer = document.getElementById('recipesContainer');
+
+            // Create recipe element
+            const recipeElement = document.createElement('div');
+            recipeElement.classList.add('recipe');
+
+            // Add recipe title
+            const titleElement = document.createElement('h4');
+            titleElement.textContent = recipe.title;
+            recipeElement.appendChild(titleElement);
+
+            // Add recipe description
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = recipe.description;
+            recipeElement.appendChild(descriptionElement);
+
+            // Add recipe ingredients
+            const ingredientsElement = document.createElement('p');
+            ingredientsElement.textContent = 'Ingredients: ' + recipe.ingredients.join(', ');
+            recipeElement.appendChild(ingredientsElement);
+
+            // Append recipe element to the container
+            recipesContainer.appendChild(recipeElement);
+        }
+
+    </script>
+</body>
+
+</html>

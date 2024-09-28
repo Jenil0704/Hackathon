@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our Food Enthusiasts Community to share recipes, cooking tips, and connect with food lovers in vibrant discussions and events!" />
+    <meta name="keywords" content="food, recipes, cooking tips, culinary community, food enthusiasts, discussion groups, virtual cooking events, cultural insights, online forums, food lovers, gastronomy" />
+    <title>Culinary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body theme = "black">
+    <div class="main w-full ">
+        <div data-color="black" class="home section w-full h-[200vh] relative">
+            <div class="w-full sticky top-0 left-0 overflow-hidden">
+                <!-- navbar -->
+                <div class="navbar fixed top-0 w-full bg-black/85 p-2 z-[4]">
+                    <nav class="flex items-center p-5 justify-between">
+                        <div class="text-white">
+                            <img class="w-[15rem]  object-cover" src="./real.png" alt="">
+                        </div>
+                
+                        <!-- Hamburger Button for smaller screens -->
+                        <button id="menu-btn" class="sm:hidden flex flex-col gap-1 focus:outline-none">
+                            <span class="block w-6 h-0.5 bg-white"></span>
+                            <span class="block w-6 h-0.5 bg-white"></span>
+                            <span class="block w-6 h-0.5 bg-white"></span>
+                        </button>
+                
+                        <!-- Links -->
+                        <div id="menu" class="hidden sm:flex sm:flex-row flex-col items-center gap-4 sm:gap-6 lg:gap-10">
+                            <a class="text-[4vw] sm:text-[2.5vh] lg:text-[2vh] text-white" href="">Home</a>
+                            <a class="text-[4vw] sm:text-[2.5vh] lg:text-[2vh] text-white" href="./destIndia.html">Destinations</a>
+                            <a class="text-[4vw] sm:text-[2.5vh] lg:text-[2vh] text-white" href="./new hack/blogpost.html">Blogs</a>
+                            <a class="text-[4vw] sm:text-[2.5vh] lg:text-[2vh] text-white" href="./Quiz.html">Quiz</a>
+                        </div>
+                    </nav>
+                </div>
+                
+                <script>
+                    const menuBtn = document.getElementById('menu-btn');
+                    const menu = document.getElementById('menu');
+                
+                    menuBtn.addEventListener('click', () => {
+                        menu.classList.toggle('hidden');
+                        menu.classList.toggle('flex');
+                    });
+                </script>
+                
+                <div class="btmtext absolute italic bottom-[12%] w-full z-[4] left-[3%] text-center sm:text-left">
+                    <h1 class="text-md sm:text-lg">Ignite your passion for food</h1>
+                    <h1 class="text-md sm:text-lg">through personalized</h1>
+                    <h1 class="text-md sm:text-lg">culinary adventures.</h1>
+                    <h1 class="text-[3vw] sm:text-[4vh] font-bold text-white italic uppercase">Scroll for more</h1>
+                </div>
+                
+                <div style="--clip:100%" class="vdodiv z-[3] w-full h-screen absolute top-0 left-0 bg-black overflow-hidden">
+                    <video autoplay muted loop class="absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./Videos/Landing.mp4"></video>
+                </div>
+                
+                <div class="marqueecontainer w-full h-screen relative overflow-hidden">
+                    <!-- Content wrapper with full width and height of the screen -->
+                    <div class="slidesm scale-[1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
+                        <!-- First row of items -->
+                        <div class="row lft w-full py-1 flex items-center gap-8 whitespace-nowrap -translate-x-1/2">
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Chole Bhature</h1>
+                                <div class="imgdiv w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Aloo Paratha</h1>
+                                <div class="imgdiv w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/MUSHROOM TIKKA RECIPE _ TANDOORI MUSHROOM _ GRILLED MUSHROOM RECIPE.jpeg" alt="">
+                                </div>
+                            </div>
+                
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Sushi</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/sushi.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Sushi</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/sushi.jpeg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Sushi</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/sushi.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Sushi</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/sushi.jpeg" alt="">
+                                </div>
+                            </div>
+                            <!-- Additional items... -->
+                        </div>
+                
+                        <!-- Second row of items -->
+                        <div class="row rgt w-full py-1 flex items-center gap-8 whitespace-nowrap -translate-x-1/3">
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Croissant</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] rounded-full overflow-hidden bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" alt="">
+                                </div>
+                            </div>
+                            <!-- Additional items... -->
+                        </div>
+                
+                        <!-- Third row of items -->
+                        <div class="row lft w-full py-1 flex items-center gap-8 whitespace-nowrap -translate-x-1/4">
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Rogan Josh</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Rogan Josh.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Rogan Josh</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Rogan Josh.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Rogan Josh</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Rogan Josh.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Rogan Josh</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Rogan Josh.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Rogan Josh</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Rogan Josh.jpeg" alt="">
+                                </div>
+                            </div>
+                
+                            <!-- Additional items... -->
+                        </div>
+                
+                        <!-- Fourth row of items -->
+                        <div class="row rgt w-full py-1 flex items-center gap-8 whitespace-nowrap -translate-x-2/4">
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Hyderabadi Biryani</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Yummy Hyderabadi Vegetable Biryani Recipe.jpeg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Hyderabadi Biryani</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Yummy Hyderabadi Vegetable Biryani Recipe.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Hyderabadi Biryani</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Yummy Hyderabadi Vegetable Biryani Recipe.jpeg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="elem flex items-center gap-5">
+                                <h1 class="text-5xl md:text-7xl font-['General_Sans']">Hyderabadi Biryani</h1>
+                                <div class="imgdiv w-[2.5rem] h-[2.5rem] md:w-[3rem] md:h-[3rem] overflow-hidden rounded-full bg-blue-700">
+                                    <img class="w-full h-full object-cover" src="./hack/hack/Yummy Hyderabadi Vegetable Biryani Recipe.jpeg" alt="">
+                                </div>
+                            </div>
+                
+                            <!-- Additional items... -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div data-color="cyan" class="craft section w-full flex flex-col sm:flex-col md:flex-col lg:flex-row gap-10 justify-between items-start px-10 py-10 relative">
+            <div class="ltext w-full sm:w-[40%] sticky top-[15vh] left-0">
+                <div class="w-fit">
+                    <h1 class="text-[6vh] sm:text-[8vh] md:text-[7vh] lg:text-[8vh] mt-14 font-['General_Sans'] leading-none sm:leading-none md:leading-none lg:leading-[5.5vw]">
+                        Discover the flavors,
+                    </h1>
+                    <h1 class="text-[6vh] sm:text-[8vh] md:text-[7vh] lg:text-[8vh] font-['General_Sans'] leading-none sm:leading-none md:leading-none lg:leading-[5.5vw] mb-10">
+                        one recipe at a time.
+                    </h1>
+                </div>
+            </div>
+            
+            
+            
+            <div class="cards w-full flex items-end flex-col gap-5">
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#E6FF94] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/sushi.jpeg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Sushi
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Sushi originated as a preservation method where fish was fermented with rice.
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+                </div>
+            
+                
+                
+                
+
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#FFCF81] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/Tacos.jpeg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Tacos
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Tacos date back to the 18th century, with indigenous peoples using corn tortillas to hold food.
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+
+                </div>
+
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#E6FF94] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/Croissants and strawberries featuring bake, bakery, and berry.jpeg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Croissant
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Croissants have origins linked to the Austrian kipferl, but they became popularized in France in the 19th century. 
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+
+                </div>
+
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#FFCF81] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/Pad Thai.jpeg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Pad Thai
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Pad Thai became popular in Thailand during World War II as a way to promote national identity and reduce rice consumption.
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+
+                </div>
+
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#E6FF94] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/Gelato.jpg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Gelato
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Gelato’s origins can be traced back to ancient Rome, but the modern version began to develop in the Renaissance.
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+
+                </div>
+
+                <div class="card card1 sticky top-[15vh] py-8 w-full flex items-center justify-center flex-col bg-[#FFCF81] h-[80vh] sm:h-[40vw] md:h-[35vw] lg:w-[75vh] rounded-2xl p-6 sm:p-8 md:p-10">
+                    <div class="w-full sm:w-3/4 bg-red-900 rounded-lg overflow-hidden">
+                        <img src="./hack/hack/Biryani.jpeg" class="w-full h-auto object-cover" alt="Sushi">
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-semibold mt-5 text-center">
+                        Biryani
+                    </h1>
+                    <p class="mt-5 text-base sm:text-lg text-center px-4 text-justify">
+                        Biryani is believed to have been brought to India by Persian travelers and merchants. 
+                    </p>
+                    <a class="text-lg mt-3" href="../new hack/blogpost.html">Read More</a>
+
+                </div>
+            </div>
+        </div>
+        <div data-color="salmon" class="real section w-full">
+            <div class="cont h-[400vh] relative">
+                <div class="slides overflow-hidden w-full h-[100vh] flex gap-20  sticky top-0 left-0">
+                    <div class="slide flex items-center justify-center w-full h-screen flex-shrink-0">
+                        <div class="text font-['General_Sans'] text-center px-4">
+                            <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Flavors of India.</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0 relative">
+                        <div class="w-full text-center relative flex  gap-16 items-center px-4">
+                            <div class="flex flex-col items-start">
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">SADHYA</h1>
+                            </div>
+                            <div class="w-full flex  gap-10">
+                                <div class="hidden md:flex w-[40vh] md:w-[50vh] h-[20vh] md:h-[50vh] flex justify-center items-center">
+                                    <img src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" class="w-full h-full object-cover rounded-full" alt="Chole Bhature">
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 flex items-left justify-center flex-col gap-5">
+                                    <a class="text-left text-xl md:text-2xl" href="">Explore Flavor's of Kochi</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pl-52 sm:pl-52 md:pl-52 lg:pl-0 slide w-full h-screen flex items-center justify-center flex-shrink-0 relative">
+                        <div class="w-full text-center relative flex  gap-16 items-center px-4">
+                            <div class="flex flex-col items-start">
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">DHOKLA</h1>
+                            </div>
+                            <div class="w-full flex  gap-10">
+                                <div class=" hidden md:flex w-[40vh] md:w-[50vh] h-[20vh] md:h-[50vh] flex justify-center items-center">
+                                    <img src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" class="w-full h-full object-cover rounded-full" alt="Chole Bhature">
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 flex items-left justify-center flex-col gap-5">
+                                    <a class="text-left text-xl md:text-2xl" href="">Explore Flavor's of Ahemadabad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-52 sm:pl-52 md:pl-52 lg:pl-0 slide w-full h-screen flex items-center justify-center flex-shrink-0 relative hidden md:flex">
+                        <div class="w-full text-center relative flex  gap-16 items-center px-4">
+                            <div class="flex flex-col items-start">
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">MASALA</h1>
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">DOSA</h1>
+                            </div>
+                            <div class="w-full flex  gap-10">
+                                <div class="w-[40vh] md:w-[50vh] h-[20vh] md:h-[50vh] flex justify-center items-center">
+                                    <img src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" class="w-full h-full object-cover rounded-full" alt="Chole Bhature">
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 flex items-left justify-center flex-col gap-5">
+                                    <a class="text-left text-xl md:text-2xl" href="">Explore Flavor's of Ahemadabad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pl-72 sm:pl-52 md:pl-52 lg:pl-0 slide w-full h-screen flex items-center justify-center flex-shrink-0 relative">
+                        <div class="w-full text-center relative flex  gap-16 items-center px-4">
+                            <div class="flex flex-col items-start">
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">DAL</h1>
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">BAATI</h1>
+                            </div>
+                            <div class="w-full flex gap-10">
+                                <div class="hidden md:flex w-[40vh] md:w-[50vh] h-[20vh] md:h-[50vh] flex justify-center items-center">
+                                    <img src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" class="w-full h-full object-cover rounded-full" alt="Chole Bhature">
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 flex items-left justify-center flex-col gap-5">
+                                    <a class="text-left text-xl md:text-2xl" href="">Explore Flavor's of Ahemadabad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pl-28 hidden md:flex sm:pl-52 md:pl-52 lg:pl-0 slide w-full h-screen flex items-center justify-center flex-shrink-0 relative">
+                        <div class="w-full text-center relative flex  gap-16 items-center px-4">
+                            <div class="flex flex-col items-start">
+                                <h1 class="font-medium text-5xl md:text-[6rem] leading-none font-['General_Sans'] text-white">VADAPAV</h1>
+                            </div>
+                            <div class="w-full flex  gap-10">
+                                <div class="w-[40vh] md:w-[50vh] h-[20vh] md:h-[50vh] flex justify-center items-center">
+                                    <img src="./hack/hack/Chana bhatura _ Chole Bhature with chole masala recipe - SecondRecipe.jpeg" class="w-full h-full object-cover rounded-full" alt="Chole Bhature">
+                                </div>
+                                
+                                <div class="w-full md:w-1/2 flex items-left justify-center flex-col gap-5">
+                                    <a class="text-left text-xl md:text-2xl" href="">Explore Flavor's of Ahemadabad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-color="white" class="team section">
+            <h1 class="text-center font-semibold text-4xl md:text-5xl lg:text-7xl tracking-tight py-20 font-['General_Sans']">About Us</h1>
+            <div class="text-center px-10 sm:px-10">
+                <h1 class="text-2xl sm:text-3xl">
+                    Discover India with Flavours
+                </h1>
+                <div class="mt-8 w-full flex items-center justify-center flex-col">
+                    <div class="w-full sm:w-4/5 lg:w-3/5">
+                        <p class="text-justify text-base sm:text-xl">
+                            At Indian Culinary Tourism, we are passionate about promoting culinary tourism in India and showcasing the country's rich gastronomic heritage to the world. Our vision is to make India the world's favorite culinary destination, where travelers can experience the diverse flavors and traditions that make Indian cuisine truly unique.
+                        </p>
+                        <p class="text-justify text-base sm:text-xl mt-5">
+                            Founded out of our deep love for food and appreciation for the incredible diversity of Indian culinary traditions, Indian Culinary Tourism aims to connect travelers with authentic food experiences across the country. Whether it's exploring the bustling markets of Delhi, sampling street food in Mumbai, or indulging in traditional thalis in Rajasthan, we believe that food has the power to create unforgettable memories and forge meaningful connections with local communities.
+                        </p>
+                        <p class="text-justify text-base sm:text-xl mt-5">
+                            Through our website, we strive to provide travelers with a wealth of information on authentic foods from every region of India, enabling them to plan immersive culinary tours tailored to their preferences. By supporting local communities, promoting sustainable food practices, and celebrating India's culinary heritage, we hope to inspire a new generation of food explorers and cultural ambassadors.
+                        </p>
+                        <p class="text-justify text-base sm:text-xl mt-5">
+                            Join us on a culinary journey like no other and discover the flavors of India, one bite at a time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- <div class="list w-full mt-10 px-10 py-10">
+
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">01</h3>
+                            <h1 class="text-5xl">Dr. Rick McCartney</h1>
+                        </div>
+                        <h3 class="text-3xl">CEO</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">02</h3>
+                            <h1 class="text-5xl">Chris Koha</h1>
+                        </div>
+                        <h3 class="text-3xl">COO</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">03</h3>
+                            <h1 class="text-5xl">Caroline Nieto</h1>
+                        </div>
+                        <h3 class="text-3xl">Chief Product Officer</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">04</h3>
+                            <h1 class="text-5xl">Victor Albertos</h1>
+                        </div>
+                        <h3 class="text-3xl">CTO</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">05</h3>
+                            <h1 class="text-5xl">Dr. Jana Hapfelmeier</h1>
+                        </div>
+                        <h3 class="text-3xl">Chief Innovation Officer</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+                <div class="listelem w-full border-b-2  border-black py-[3rem] relative">
+                    <div class="relative flex items-center justify-between px-7 z-[3] ">
+                        <div class="left flex gap-20 items-center">
+                            <h3 class="text-5xl">06</h3>
+                            <h1 class="text-5xl">Michael Robin</h1>
+                        </div>
+                        <h3 class="text-3xl">VP of Marketing</h3>
+                    </div>
+                    <div class=" picture opacity-0 w-[15rem] h-[15rem] overflow-hidden rounded-full bg-red-500 absolute z-[4] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="bluelayer w-full h-[0%] bottom-0 left-0 bg-blue-600 absolute z-[2]"></div>
+                </div>
+               
+            </div> -->
+        <!-- </div> -->
+        <!-- <div data-color="white" class="para section w-full flex items-center gap-5 px-10 ">
+            <div class="left w-1/2 -mt-96 flex items-end justify-center">
+                <div class="text w-[70%] flex flex-col items-center justify-center">
+                    <h3 class="textpara text-3xl font-light text-center text-justify leading-[2.7rem]">Working with the Significo team has been such
+                        a pleasure! We took on a significant project to
+                        rebuild our entire platform and the team
+                        approached the project with our best interests
+                        in mind. They continue to prioritize the end
+                        user experience and offer amazing expertise in
+                        all of the areas we lack internally. I would
+                        personally be lost without this team, their
+                        ability to problem solve, their openness to
+                        feedback and desire to build the product like it
+                        is their own.</h3>
+                        
+                    <div class="pers flex flex-col items-center justify-center mt-10 gap-5">
+                        <div class="image w-32 h-32 rounded-full overflow-hidden bg-red-500">
+                            <img class="w-full h-full object-cover" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d34832e5_MirandaErnst.jpeg" alt="">
+                        </div>
+                        <h1 class="text-3xl">Miranda Ernst</h1>
+                        <h3>Product Manager @ HealthCheck360</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right w-1/2 mt-[70%] flex items-end text-justify justify-center">
+                <div class="text w-[70%] flex flex-col items-center justify-center">
+                    <h3 class="textpara text-3xl font-light text-center text-justify leading-[2.7rem]">Working with Significo and their
+                        recommendation service has been a
+                        game-changer for our occupational
+                        prevention efforts. Our customers are
+                        extremely satisfied with the tool's impressive
+                        technical capabilities and data-driven
+                        approach. But what truly sets it apart is the
+                        intuitive and modern user experience it offers,
+                        making it a breeze for our clients to navigate.
+                        By leveraging this service, our customers have
+                        successfully tackled presenteeism and
+                        absenteeism, making a significant impact on
+                        their workforce's well-being. We highly
+                        recommend Significo to any organization
+                        looking to optimize their occupational health
+                        and drive positive change.</h3>
+                        
+                    <div class="pers flex flex-col items-center justify-center mt-10 gap-5">
+                        <div class="image w-32 h-32 rounded-full overflow-hidden bg-red-500">
+                            <img class="w-full h-full object-cover" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/659dbdfd5a080be8d3483253_EmekAltun.jpg" alt="">
+                        </div>
+                        <h1 class="text-3xl">Emek Altun</h1>
+                        <h3>CEO @ Vitaservices</h3>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div data-color="white" class="capsules section w-full h-screen mt-60  flex items-start justify-between gap-10 px-10">
+            <div class="left w-1/3 flex flex-col justify-between h-full py-10">
+                <h1 class="text-2xl leading-[2.5rem]">Stay up-to-date on the
+                    latest healthcare
+                    innovations and thought
+                    leadership.</h1>
+                    <div class="heading">
+                        <h1 class="text-7xl">Explore Our Insights</h1>
+                        <div class="w-fit mt-10 px-14 py-4 border-[1px] border-black">
+                            <div class="makser overflow-hidden">
+                                <div class="inline-block">
+                                    <span class="inline-block text-xl font-semibold">
+                                        View All Articles
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="right flex items-center h-full gap-20">
+                <div class="capsules -rotate-[16deg] flex flex-col items-center rounded-full  px-10 py-6 border-[1px] border-black">
+                    <div class="w-80 h-80 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65e61826ab9558e05e681a7f_Untitled%20design.png" alt="">
+                    </div>
+                    <div class="text text-center mt-10">
+                        <h3 class="text-3xl font-medium  font-['General_Sans']">Equity In Teams</h3>
+                        <h3 class="text-3xl font-medium  font-['General_Sans']">International Women's</h3>
+                        <h3 class="text-3xl font-medium  font-['General_Sans']">Day Conversation with</h3>
+                        <h3 class="text-3xl font-medium  font-['General_Sans']">Caroline Nieto</h3>
+                        <h3 class="text-3xl font-medium  font-['General_Sans']">Significo's CPO</h3>
+                    </div>
+                    <button class="bg-purple-300 text-lg px-4 py-2 rounded-full flex items-center mt-10 mb-32 ">Thought Leadership</button>
+                </div>
+                <div class="capsules -rotate-[16deg] translate-y-32 flex flex-col items-center rounded-full px-10 py-6 border-[1px] border-black">
+                    <div class="w-80 h-80 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://assets-global.website-files.com/659dbdfd5a080be8d3483190/65affe89f470b736a1da1ba2_How%20to%20Use%20Digital%20Health%20Interventions.jpg" alt="">
+                    </div>
+                    <div class="text text-center mt-10">
+                        <h3 class="text-3xl font-medium font-['General_Sans']">Equity In Teams</h3>
+                        <h3 class="text-3xl font-medium font-['General_Sans']">International Women's</h3>
+                        <h3 class="text-3xl font-medium font-['General_Sans']">Day Conversation with</h3>
+                        <h3 class="text-3xl font-medium font-['General_Sans']">Caroline Nieto</h3>
+                        <h3 class="text-3xl font-medium font-['General_Sans']">Significo's CPO</h3>
+                    </div>
+                    <button class="bg-purple-300 text-lg px-4 py-2 rounded-full flex items-center mt-10 mb-32 ">Thought Leadership</button>
+                </div>
+            </div>        
+        </div> -->
+        <!-- <div class="discover section w-full mt-32 py-16 px-10 flex  bg-yellow-200">
+            <div class="left w-1/2">
+                <h1 class="text-7xl">Discover</h1>
+                <h1 class="text-7xl">Significo.</h1>
+                <button class="py-3 font-medium px-6 text-xl mt-12 bg-black text-white">Let's Go</button>
+            </div>
+            <div class="right w-1/2 flex items-center justify-center">
+                <p class="text-xl w-[70%] font-medium">Find out how Significo's people-centered
+                    designs can make health technology more empowering.</p>
+                <div class="circle w-48 h-48  rounded-full flex items-center justify-center">
+                    <div class="w-40 h-40 border-[1px] border-black rounded-full">
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Footer Section -->
+<footer class="bg-[#4E342E] text-[#FFF8E1] py-7 px-10 mt-10">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      
+      <!-- Social Media Links -->
+      <div class="mb-6 md:mb-0">
+        <h2 class="text-lg font-semibold mb-4">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.97 3.65 9.09 8.44 9.93v-7.02h-2.54v-2.91h2.54v-2.23c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.22.2 2.22.2v2.43h-1.25c-1.24 0-1.62.77-1.62 1.56v1.92h2.76l-.44 2.91h-2.32v7.02c4.79-.84 8.44-4.96 8.44-9.93 0-5.5-4.46-9.96-9.96-9.96z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.97 3.65 9.09 8.44 9.93v-7.02h-2.54v-2.91h2.54v-2.23c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.22.2 2.22.2v2.43h-1.25c-1.24 0-1.62.77-1.62 1.56v1.92h2.76l-.44 2.91h-2.32v7.02c4.79-.84 8.44-4.96 8.44-9.93 0-5.5-4.46-9.96-9.96-9.96z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.97 3.65 9.09 8.44 9.93v-7.02h-2.54v-2.91h2.54v-2.23c0-2.52 1.49-3.92 3.77-3.92 1.09 0 2.22.2 2.22.2v2.43h-1.25c-1.24 0-1.62.77-1.62 1.56v1.92h2.76l-.44 2.91h-2.32v7.02c4.79-.84 8.44-4.96 8.44-9.93 0-5.5-4.46-9.96-9.96-9.96z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-lg font-semibold mb-4">Get in Touch</h2>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm">Name</label>
+            <input class="bg-transparent border-b-2 w-96 outline-none" type="text" id="name" name="name" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-500">
+          </div>
+          <div>
+            <label for="email" class="block text-sm">Email</label>
+            <input class="bg-transparent border-b-2 w-96 outline-none" type="email" id="email" name="email" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-500">
+          </div>
+          <div>
+            <label for="message" class="block text-sm">Message</label>
+            <textarea class="bg-transparent border-b-2 w-96 resize-none outline-none" id="message" name="message" rows="4" required class="w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring focus:border-blue-500"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="w-96 bg-[#FFF8E1] text-[#4E342E] font-semibold py-2 px-4 rounded-md">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="mt-10 text-center text-gray-400">
+      <p>&copy; 2024 YourCompany. All rights reserved.</p>
+    </div>
+  </footer>
+  
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="./script.js"></script>
+    </body>
+</html>

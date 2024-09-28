@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Enthusiasts Community</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/style1.css"> -->
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="bg-teal-500 p-5 text-white text-center">
+        <h1 class="text-3xl font-bold">Food Enthusiasts Community</h1>
+    </header>
+
+    <main class="p-5">
+        <section class="mb-10 bg-[#4E342E] p-8">
+            <h2 class="text-2xl font-semibold mb-5 text-center text-[#FFF8E1]">Join the Conversation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Forums Section -->
+                <div class="bg-white p-5 rounded shadow">
+                    <h3 class="font-bold text-xl text-[#4E342E]">Forums</h3>
+                    <p class="text-gray-700">Engage in lively discussions on various culinary topics.</p>
+                    <a href="Recipe_Sharing_food.html">
+                        <button class="mt-2 bg-blue-600 text-white py-2 px-4 rounded ">Join</button>
+                    </a>
+                </div>
+        
+                <!-- Discussion Groups Section -->
+                <div class="bg-white p-5 rounded shadow">
+                    <h3 class="font-bold text-xl text-[#4E342E]">Discussion Groups</h3>
+                    <p class="text-gray-700">Collaborate with others on your favorite recipes and cooking techniques.</p>
+                    <a href="https://meet.google.com/mms-pkyt-wyq/" target="_blank">
+                        <button class="mt-2 bg-blue-600 text-white py-2 px-4 rounded ">Join</button>
+                    </a>
+                </div>
+        
+                <!-- Virtual Events Section -->
+                <div class="bg-white p-5 rounded shadow">
+                    <h3 class="font-bold text-xl text-[#4E342E]">Virtual Events</h3>
+                    <p class="text-gray-700">Participate in live cooking demonstrations and workshops.</p>
+                    <a href="Quiz.html">
+                        <button class="mt-2 bg-blue-600 text-white py-2 px-4 rounded ">Join</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+        <div class="bg-white rounded-lg p-5">
+            <h2 class="text-xl font-bold mb-3" id="modalTitle">Details</h2>
+            <p id="modalContent">Content goes here...</p>
+            <button onclick="closeModal()" class="mt-5 bg-red-500 text-white py-2 px-4 rounded">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(type) {
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalContent = document.getElementById('modalContent');
+
+            if (type === 'forum') {
+                modalTitle.innerText = 'Forums';
+                modalContent.innerText = 'Welcome to our forums! Discuss recipes, share cooking tips, and engage with fellow food enthusiasts.';
+            } else if (type === 'group') {
+                modalTitle.innerText = 'Discussion Groups';
+                modalContent.innerText = 'Join our discussion groups to collaborate on culinary projects and exchange ideas.';
+            } else if (type === 'event') {
+                modalTitle.innerText = 'Virtual Events';
+                modalContent.innerText = 'Participate in our virtual events where you can learn and cook alongside experts.';
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.add('hidden');
+        }
+    </script>
+
+</body>
+
+</html>

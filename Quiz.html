@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Discovery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style1.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Culinary Discovery</h1>
+        <nav>
+            <ul>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#recipes">Recipe Suggestions</a></li>
+                <li><a href="#guides">Food Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quizzes">
+            <h2>Interactive Quizzes</h2>
+            <button onclick="startQuiz()">Start Quiz</button>
+            <div id="quizContainer"></div>
+        </section>
+
+        <section id="recipes">
+            <h2>Customized Recipe Suggestions</h2>
+            <button onclick="suggestRecipe()">Get Recipe</button>
+            <div id="recipeSuggestion" class="recipe-suggestion"></div>
+        </section>
+
+
+        <section id="guides">
+            <h2>Curated Food Guides</h2>
+            <ul>
+                <li><a href="Quize_quide_to_species.html">Guide to Spices</a></li>
+                <li><a href="Quiz_Regional_guide.html">Regional Cuisine Guide</a></li>
+                <li><a href="Quiz_seasonal_intredients.html">Seasonal Ingredients</a></li>
+            </ul>
+        </section>
+
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <form id="reviewForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <br><br>
+                <button type="submit">Submit Review</button>
+            </form>
+
+            <div id="reviewsContainer">
+                <h3>Recent Reviews</h3>
+                <!-- Reviews will be displayed here -->
+            </div>
+        </section>
+
+        <header class="bg-teal-500 p-5 text-white text-center">
+            <h1 class="text-3xl font-bold">Food Enthusiasts Community</h1>
+        </header>
+    
+        <main class="p-5">
+            <section class="mb-10 bg-blue-300">
+                <h2 class="text-2xl font-semibold mb-5 text-center">Join the Conversation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded shadow">
+                        <h3 class="font-bold text-xl">Forums</h3>
+                        <p>Engage in lively discussions on various culinary topics.</p>
+                        <a href="Recipe_Sharing_food.html">
+                            <button class="mt-2 bg-blue-600 text-black py-2 px-4 rounded">Join</button>
+                        </a>
+                    </div>
+    
+                    <div class="bg-white p-5 rounded shadow">
+                        <h3 class="font-bold text-xl">Discussion Groups</h3>
+                        <p>Collaborate with others on your favorite recipes and cooking techniques.</p>
+                        <a href="https://meet.google.com/mms-pkyt-wyq/" target="_blank">
+                            <button class="mt-2 bg-blue-600 text-black py-2 px-4 rounded">Join</button>
+                        </a>
+                    </div>
+                    <div class="bg-white p-5 rounded shadow">
+                        <h3 class="font-bold text-xl">Virtual Events</h3>
+                        <p>Participate in live cooking demonstrations and workshops.</p>
+                        <a href="Quiz.html">
+                            <button class="mt-2 bg-blue-600 text-black py-2 px-4 rounded">Join</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Modal -->
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+            <div class="bg-white rounded-lg p-5">
+                <h2 class="text-xl font-bold mb-3" id="modalTitle">Details</h2>
+                <p id="modalContent">Content goes here...</p>
+                <button onclick="closeModal()" class="mt-5 bg-red-500 text-white py-2 px-4 rounded">Close</button>
+            </div>
+        </div>
+    
+        <script>
+            function openModal(type) {
+                const modal = document.getElementById('modal');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalContent = document.getElementById('modalContent');
+    
+                if (type === 'forum') {
+                    modalTitle.innerText = 'Forums';
+                    modalContent.innerText = 'Welcome to our forums! Discuss recipes, share cooking tips, and engage with fellow food enthusiasts.';
+                } else if (type === 'group') {
+                    modalTitle.innerText = 'Discussion Groups';
+                    modalContent.innerText = 'Join our discussion groups to collaborate on culinary projects and exchange ideas.';
+                } else if (type === 'event') {
+                    modalTitle.innerText = 'Virtual Events';
+                    modalContent.innerText = 'Participate in our virtual events where you can learn and cook alongside experts.';
+                }
+    
+                modal.classList.remove('hidden');
+            }
+    
+            function closeModal() {
+                const modal = document.getElementById('modal');
+                modal.classList.add('hidden');
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Culinary Discovery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const quizQuestions = [
+            {
+                question: "What is the main ingredient in guacamole?",
+                options: ["Avocado", "Tomato", "Onion", "Pepper"],
+                answer: "Avocado"
+            },
+            {
+                question: "Which country is known for sushi?",
+                options: ["China", "Japan", "Thailand", "Korea"],
+                answer: "Japan"
+            },
+            {
+                question: "What type of pasta is shaped like a small rice grain?",
+                options: ["Fusilli", "Orzo", "Penne", "Fettuccine"],
+                answer: "Orzo"
+            },
+            {
+                question: "What is the main ingredient in hummus?",
+                options: ["Chickpeas", "Lentils", "Peas", "Soybeans"],
+                answer: "Chickpeas"
+            },
+            {
+                question: "Which spice is known as the 'king of spices'?",
+                options: ["Turmeric", "Cumin", "Pepper", "Ginger"],
+                answer: "Pepper"
+            },
+            {
+                question: "What is the traditional bread of India?",
+                options: ["Naan", "Pita", "Tortilla", "Baguette"],
+                answer: "Naan"
+            },
+            {
+                question: "Which cheese is traditionally used in lasagna?",
+                options: ["Ricotta", "Cheddar", "Mozzarella", "Parmesan"],
+                answer: "Ricotta"
+            },
+            {
+                question: "What is the primary ingredient in a Caesar salad dressing?",
+                options: ["Olive oil", "Egg", "Vinegar", "Mayonnaise"],
+                answer: "Egg"
+            },
+            {
+                question: "Which fruit is known as the 'king of fruits'?",
+                options: ["Apple", "Mango", "Durian", "Banana"],
+                answer: "Durian"
+            },
+            {
+                question: "What is the process of cooking food in a vacuum-sealed bag called?",
+                options: ["Sous-vide", "Braising", "Roasting", "Steaming"],
+                answer: "Sous-vide"
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let selectedQuestions = [];
+
+        function startQuiz() {
+            const quizContainer = document.getElementById('quizContainer');
+            score = 0; // Reset score
+            currentQuestionIndex = 0; // Reset question index
+            quizContainer.innerHTML = ''; // Clear previous content
+            selectedQuestions = getRandomQuestions(5); // Select 5 random questions
+            loadQuestion();
+        }
+
+        function getRandomQuestions(num) {
+            const shuffled = [...quizQuestions].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, num);
+        }
+
+        function loadQuestion() {
+            if (currentQuestionIndex < selectedQuestions.length) {
+                const questionData = selectedQuestions[currentQuestionIndex];
+                const quizContainer = document.getElementById('quizContainer');
+
+                // Clear previous question
+                quizContainer.innerHTML = '';
+
+                // Create question element
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('quiz-question');
+                questionElement.innerHTML = `<h3>${questionData.question}</h3>`;
+                quizContainer.appendChild(questionElement);
+
+                // Create answer options
+                questionData.options.forEach(option => {
+                    const button = document.createElement('div');
+                    button.classList.add('answer-option');
+                    button.innerText = option;
+                    button.onclick = () => checkAnswer(option);
+                    quizContainer.appendChild(button);
+                });
+            } else {
+                showResults();
+            }
+        }
+
+        function checkAnswer(selectedOption) {
+            const correctAnswer = selectedQuestions[currentQuestionIndex].answer;
+            if (selectedOption === correctAnswer) {
+                score++;
+            }
+            currentQuestionIndex++;
+            loadQuestion();
+        }
+
+        function showResults() {
+            const quizContainer = document.getElementById('quizContainer');
+            quizContainer.innerHTML = `<h3>Your score: ${score} out of ${selectedQuestions.length}</h3>`;
+            suggestRecipe();
+        }
+
+        function suggestRecipe() {
+            const recipes = [
+                {
+                    title: "Pasta Primavera",
+                    description: "A delightful pasta dish loaded with fresh vegetables.",
+                    ingredients: ["Pasta", "Bell peppers", "Carrots", "Zucchini", "Olive oil", "Parmesan cheese"]
+                },
+                {
+                    title: "Chicken Tikka Masala",
+                    description: "A flavorful chicken dish in a creamy tomato sauce.",
+                    ingredients: ["Chicken", "Yogurt", "Tomato sauce", "Spices", "Onion", "Cream"]
+                },
+                {
+                    title: "Vegetable Stir Fry",
+                    description: "A quick and healthy dish with seasonal vegetables.",
+                    ingredients: ["Broccoli", "Carrots", "Bell peppers", "Soy sauce", "Ginger", "Garlic"]
+                },
+                {
+                    title: "Chocolate Lava Cake",
+                    description: "A rich chocolate cake with a gooey center.",
+                    ingredients: ["Chocolate", "Butter", "Eggs", "Sugar", "Flour"]
+                }
+            ];
+
+            const recipeSuggestion = document.getElementById('recipeSuggestion');
+            const randomIndex = Math.floor(Math.random() * recipes.length);
+            const selectedRecipe = recipes[randomIndex];
+
+            // Clear previous content
+            recipeSuggestion.innerHTML = `
+                <div class="recipe-title">${selectedRecipe.title}</div>
+                <div class="recipe-description">${selectedRecipe.description}</div>
+                <ul class="recipe-ingredients">
+                    ${selectedRecipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                </ul>
+            `;
+        }
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsContainer = document.getElementById('reviewsContainer');
+
+        reviewForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById('name').value;
+            const review = document.getElementById('review').value;
+
+            // Create review element
+            const reviewElement = document.createElement('div');
+            reviewElement.classList.add('review');
+            reviewElement.innerHTML = `
+                <h4>${name}</h4>
+                <p>${review}</p>
+            `;
+
+            // Append review to the reviews container
+            reviewsContainer.appendChild(reviewElement);
+
+            // Clear the form inputs
+            reviewForm.reset();
+        });
+    </script>
+</body>
+
+</html>

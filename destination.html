@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="w-full bg-[#4E342E]">
+        <!-- Navbar -->
+        <div class="navbar fixed h-20 top-0 w-full sm:w-full px-3 bg-black z-[4]">
+            <nav class="flex items-center p-5 justify-between">
+                <h1 class="text-[3vh] text-white">Our name</h1>
+    
+                <!-- Hamburger Menu Button -->
+                <button id="menu-btn" class="sm:hidden text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+    
+                <!-- Navigation Items for Larger Screens -->
+                <div class="hidden sm:flex items-center justify-center gap-5 sm:gap-10">
+                    <a class="text-[2vh] sm:text-[2.5vh] text-white" href="">Home</a>
+                    <a class="text-[2vh] sm:text-[2.5vh] text-white" href="">Recipe</a>
+                    <a class="text-[2vh] sm:text-[2.5vh] text-white" href="">About</a>
+                    <a class="text-[2vh] sm:text-[2.5vh] text-white" href="">Contact Us</a>
+                </div>
+            </nav>
+    
+            <!-- Dropdown Menu for Mobile -->
+            <div id="menu" class="hidden sm:hidden flex flex-col items-center bg-black/70 mt-2 rounded-lg p-4 w-full">
+                <ul class="w-full text-center space-y-4">
+                    <li><a class="text-[2.5vh] text-white" href="">Home</a></li>
+                    <li><a class="text-[2.5vh] text-white" href="">Recipe</a></li>
+                    <li><a class="text-[2.5vh] text-white" href="">About</a></li>
+                    <li><a class="text-[2.5vh] text-white" href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- New Section Below Navbar -->
+        <div class="pt-24 py-5 text-center text-[#FFF8E1]">
+            <h1 class="text-[3.5vw] uppercase  font-semibold text-white">Explore Culinary Horizons</h1>
+        </div>
+            <!-- <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marquee flex items-center justify-center gap-5 flex-shrink-0 -translate-x-[100%]">
+                <h1 class="text-[4vw] font-semibold">Explore Culinary Horizons</h1>
+                <img class="h-[4vw]" src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div> -->
+            
+        </div>
+    
+        <div class="relative w-full h-[95vh]">
+            <!-- Background Image -->
+            <img class="absolute top-0 left-0 h-full w-full object-cover z-[1]" src="https://static.wixstatic.com/media/11062b_6ffa784444774a4997c879c0bd717418~mv2.jpeg/v1/fill/w_1428,h_1051,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_6ffa784444774a4997c879c0bd717418~mv2.jpeg" alt="">
+    
+            <!-- Content Over the Image -->
+            <div class="absolute top-0 left-0 w-full h-full flex gap-10 justify-center items-center z-[2] mt-10">
+                <div class="dest1 w-1/4 h-[70vh] bg-white relative">
+                    <div class="w-20 h-20 rounded-full bg-[#4E342E] flex items-center justify-center absolute -top-7 left-1/2 -translate-x-1/2">
+                        <h1 class="text-3xl text-[#FFF8E1]">1</h1>
+                    </div>
+                    <div class="mt-16 px-7">
+                        <h1 class="text-center text-2xl text-[#4E342E]">Indian Tour Itineraries</h1>
+                        <p class="mt-5 text-lg text-justify">
+                            Explore popular Indian cities with our free day tour itineraries, designed to showcase local culture and cuisine. Discover iconic landmarks, hidden gems, and savor authentic culinary delights—from street food to traditional dishes. Perfect for travelers seeking an immersive taste of India's rich heritage and vibrant flavors. Start your journey today!.
+                        </p>
+                    </div>
+                    <div class="mt-10 flex items-center justify-center">
+                        <a href="./destIndia.html" class="px-7 py-2 bg-[#4E342E] text-[#FFF8E1]">More Info</a>
+                    </div>
+                </div>
+
+                <div class="dest2 w-1/4 h-[70vh] bg-white relative">
+                    <div class="w-20 h-20 rounded-full bg-[#4E342E] flex items-center justify-center absolute -top-7 left-1/2 -translate-x-1/2">
+                        <h1 class="text-3xl text-[#FFF8E1]">2</h1>
+                    </div>
+                    <div class="mt-16 px-7">
+                        <h1 class="text-center text-2xl text-[#4E342E]">Indian Tour Itineraries</h1>
+                        <p class="mt-5 text-lg text-justify">
+                            Explore popular Indian cities with our free day tour itineraries, designed to showcase local culture and cuisine. Discover iconic landmarks, hidden gems, and savor authentic culinary delights—from street food to traditional dishes. Perfect for travelers seeking an immersive taste of India's rich heritage and vibrant flavors. Start your journey today!.
+                        </p>
+                    </div>
+                    <div class="mt-10 flex items-center justify-center">
+                        <button class="px-7 py-2 bg-[#4E342E] text-[#FFF8E1]">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer w-full h-96 bg-[#4E342E] ">
+
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="./destination.js"></script>
+</body>
+</html>

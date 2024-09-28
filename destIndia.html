@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <div class="w-full bg-[#FFF8E1]  ">
+        <div class="navbar fixed h-20 top-0 w-full sm:w-full px-3 bg-black z-[4]">
+        <nav class="flex items-center p-5 justify-between">
+            <h1 class="text-[3vh] text-white">Our name</h1>
+
+            <!-- Hamburger Menu Button -->
+            <button id="menu-btn" class="sm:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Navigation Items for Larger Screens -->
+            <div class="hidden sm:flex items-center justify-center gap-5 sm:gap-10">
+                <a class="text-[2vh] sm:text-[2.5vh] text-white" href="./Website Clone/index.html">Home</a>
+                <a class="text-[2vh] sm:text-[2.5vh] text-white" href="#">Destination</a>
+                <a class="text-[2vh] sm:text-[2.5vh] text-white" href="./new hack/blogpost.html">Blogs</a>
+                <a class="text-[2vh] sm:text-[2.5vh] text-white" href="./Quiz.html">Quiz</a>
+            </div>
+        </nav>
+
+        <!-- Dropdown Menu for Mobile -->
+        <div id="menu" class="hidden sm:hidden flex flex-col items-center bg-black/70 mt-2 rounded-lg p-4 w-full">
+            <ul class="w-full text-center space-y-4">
+                <li><a class="text-[2.5vh] text-white" href="">Home</a></li>
+                <li><a class="text-[2.5vh] text-white" href="">Recipe</a></li>
+                <li><a class="text-[2.5vh] text-white" href="">About</a></li>
+                <li><a class="text-[2.5vh] text-white" href="">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="pt-24 w-full">
+            <div class="text">
+                <h1 class="text-center text-[4vw] sm:text-[5vw] md:text-[6vw] lg:text-[7vw] uppercase text-[#4E342E]">Day Tours</h1>
+            </div>
+            
+
+            <div class="cities w-full flex flex-col gap-20 items-center justify-center px-4 mt-14 md:px-28">
+                <div class="flex flex-col md:flex-row w-full gap-10">
+                    <div class="city kochi w-full md:w-[40%] h-96 bg-blue-700 relative flex items-center justify-center">
+                        <img src="https://static.wixstatic.com/media/105652_f8709c97a1f54f7abc4ae4ea46f87e0e~mv2.jpg/v1/fill/w_636,h_504,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg" class="w-full h-full object-cover" alt="">
+                        <div class="w-[65%] h-[65%] bg-[#4E342E] p-5 absolute right-10 rounded-lg">
+                            <h1 class="text-2xl text-[#FFF8E1]">Kochi</h1>
+                            <p class="mt-5 text-justify text-md text-[#FFF8E1]">Kochi, a coastal city in Kerala, is celebrated for its picturesque backwaters, colonial heritage, and vibrant cultural scene.</p>
+                            <a href="./new hack/kochi-blog.html" class="px-5 mt-3 inline-block py-2 bg-[#FFF8E1] text-[#4E342E]">Read More</a>
+                        </div>
+                    </div>
+                    <div class="city ahmedabad w-full md:w-[40%] h-96 bg-blue-700 flex items-center justify-center relative">
+                        <img src="https://static.wixstatic.com/media/105652_8ab61816e13e4231933424ea8445168a~mv2.jpg/v1/fill/w_627,h_497,al_c,lg_1,q_80,enc_auto/Image-empty-state.jpg" class="h-full w-full object-cover" alt="">
+                        <div class="w-[65%] h-[65%] bg-[#4E342E] p-5 absolute right-10 rounded-lg">
+                            <h1 class="text-2xl text-[#FFF8E1]">Ahmedabad</h1>
+                            <p class="mt-5 text-justify text-md text-[#FFF8E1]">Ahmedabad, a major city in Gujarat, is known for its rich history, vibrant textile industry, and architectural marvels.</p>
+                            <a href="./new hack/Ahmedabad.html" class="px-5 mt-3 inline-block py-2 bg-[#FFF8E1] text-[#4E342E]">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            
+                    <div class="flex flex-col md:flex-row w-full gap-10">
+                        <div class="city banglore w-full md:w-[40%] h-96 bg-blue-700 flex items-center justify-center relative">
+                            <img src="https://static.wixstatic.com/media/105652_ecd63094175541a5b03d84cbd6acf91c~mv2.jpg/v1/fill/w_636,h_504,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg" class="w-full h-full object-cover" alt="">
+                            <div class="w-[65%] h-[65%] bg-[#4E342E] p-5 absolute right-10 rounded-lg">
+                                <h1 class="text-2xl text-[#FFF8E1]">Bangalore</h1>
+                                <p class="mt-5 text-justify text-md text-[#FFF8E1]">Bangalore, a bustling tech hub, is famous for its lush parks, innovative spirit, and vibrant nightlife.</p>
+                                <a href="./new hack/Bangalore.html" class="px-5 mt-3 inline-block py-2 bg-[#FFF8E1] text-[#4E342E]">Read More</a>
+                            </div>
+                        </div>
+                        <div class="city jaipur w-full md:w-[40%] h-96 bg-blue-700 flex items-center justify-center relative">
+                            <img src="https://static.wixstatic.com/media/105652_7e55af5fe15043a2a3646a0b94511543~mv2.jpg/v1/fill/w_636,h_504,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg" class="w-full h-full object-cover" alt="">
+                            <div class="w-[65%] h-[65%] bg-[#4E342E] p-5 absolute right-10 rounded-lg">
+                                <h1 class="text-2xl text-[#FFF8E1]">Jaipur</h1>
+                                <p class="mt-5 text-justify text-md text-[#FFF8E1]">Jaipur, the capital of Rajasthan, is famed for its majestic palaces, vibrant bazaars, and rich cultural heritage.</p>
+                                <a href="./new hack/Jaipur.html" class="px-5 mt-3 inline-block py-2 bg-[#FFF8E1] text-[#4E342E]">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full gap-10 md:flex-row">
+                        <div class="city mumbai w-full md:w-[40%] h-96 bg-blue-700 flex items-center justify-center relative">
+                            <img src="https://static.wixstatic.com/media/105652_0ab60cfc9250449ab97bf03708460c99~mv2.jpg/v1/fill/w_636,h_504,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-empty-state.jpg" class="w-full h-full object-cover" alt="">
+                            <div class="w-[65%] h-[65%] bg-[#4E342E] p-5 absolute right-10 rounded-lg">
+                                <h1 class="text-2xl text-[#FFF8E1]">Mumbai</h1>
+                                <p class="mt-5 text-justify text-md text-[#FFF8E1]">Mumbai, India’s financial hub, is famous for its iconic skyline, lively beaches, and vibrant cultural scene.</p>
+                                <a href="./new hack/Mumbai.html" class="px-5 mt-3 inline-block py-2 bg-[#FFF8E1] text-[#4E342E]">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div class="footer w-full h-96">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="./destIndia.js"></script>
+</body>
+</html>
